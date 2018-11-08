@@ -1,0 +1,163 @@
+html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a.mdl-navigation__link:hover{
+  background-color: #ffc107;
+  color: black;
+}
+
+.backbody{
+  background-image: url(../img/fundo.png);
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: repeat-x;
+}
+
+.detalhes-content{
+  visibility: hidden;
+  position: absolute;
+  left: 36%;
+  top: 0;
+  z-index: 10000;
+  transition: .5s ease
+
+}
+
+.card-prod{
+  background-size: cover;
+  float: left;
+  padding-top: 21%;
+  position: relative;
+  background-position: center;
+}
+
+div.card-prod:hover .detalhes-content{
+visibility: visible;
+top: 50%;
+}
+
+.legenda{
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  padding: 3%;
+  bottom: 0px;
+  position: absolute;
+  width: 94%;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px white;
+}
+
+/*Configurações Padrões*/
+ul.menu, .menu li, .menu button{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+ul.menu ul{
+  position:absolute;
+  display:none;
+  box-shadow:3px 3px 2px #333;
+}
+
+.btnnav{
+  background: none;
+  width:100%;
+  border: none;
+}
+ 
+/* Configurações nivel 1*/
+ul.menu{
+  float:left;
+  font-size:15px;
+  border-radius:5px;
+  padding:0 5px;
+}
+
+.menu li{
+  float:left;
+  position:relative;
+}
+
+.menu li button{
+  display:block;
+  padding:0 20px;
+  line-height:45px;
+  height:45px;
+  float:left;
+  transition:all 0.1s linear;
+}
+ 
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-1{
+  display:block;
+  top:45px;
+  left:0;
+  padding:5px;
+  width:180px;
+  border-radius:0 0 5px 5px;
+}
+.menu ul.submenu-1 button{
+  width:180px;
+  padding:0 20px;
+  border-radius:5px;
+}
+ 
+/* Configurações nivel 2*/
+.menu li:hover > ul.submenu-2{
+  display:block;
+  top:0;
+  left:175px;
+  padding:5px;
+  width:180px;
+  border-radius: 0 5px 5px 5px;
+}
+
+.menu ul.submenu-2 button{
+  width:180px;
+  padding:0 20px;
+  border-radius:5px;
+}
+
+/*Configurações de cores*/
+ 
+/*nivel 1*/
+.menu{background:#ffc107; }
+.menu button{ color:#000;}
+.menu li:hover > button{ background:#3F51B5;  color:#fff;}
+ 
+/*nivel 2*/
+.submenu-1{ background:#3F51B5;}
+.submenu-1 button{color:#fff; width: 100%;}
+.submenu-1 li:hover > button{ background:#303F9F;}
+ 
+/*nivel 3*/
+.submenu-2{ background:#303F9F;}
+.submenu-2 button{color:#fff; width: 100%;}
+.submenu-2 li:hover > button{ background:#1A237E; }
+
+.demo-layout-transparent{
+  background-image: url(../img/fundoindex.jpg);
+  background-size: cover;
+  background-position: bottom left;
+}
+
+ul.marca li{
+  height: 120px;
+  vertical-align: middle;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.marca li img{
+  max-width: 100%;
+  max-height: 100px;
+  vertical-align: middle;
+  margin: auto;
+  text-align: justify;
+}
+
+
